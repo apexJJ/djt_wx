@@ -1,0 +1,106 @@
+<cu-custom bgColor="bg-blue" isBack="{{true}}"><view slot="backText">返回</view><view slot="content">注册</view></cu-custom>
+
+<view class="padding bg-white text-left ">
+
+<scroll-view scroll-x class="bg-blue nav text-center">
+  <view class="cu-item {{0==TabCur?'text-white cur':''}}" bindtap="tabSelect" data-id="0">
+    <text class="cuIcon-people"></text> 第一步
+  </view>
+  <view class="cu-item {{1==TabCur?'text-white cur':''}}" bindtap="tabSelect" data-id="1">
+    <text class="cuIcon-location"></text> 第二步
+  </view>
+</scroll-view>
+  <view class="padding solid{{size?'s':''}}-top margin-top"></view>
+
+
+   <!-- 第一步的展示页面 -->
+  <text class="text-blue text-bold" hidden='{{oneshow}}'> 姓名</text>
+  <view class="flex" hidden='{{oneshow}}'>
+       <view class="flex-sub line-blue solid{{size?'s':''}} padding-sm margin-xs radius">
+   	<input placeholder="请输入真实姓名" class="text-black" bindinput='inputData' value='{{userName}}' ></input>
+      </view>
+    </view>
+  <text class="text-blue text-bold" hidden='{{oneshow}}'> 车牌号</text>
+ <view class="flex" hidden='{{oneshow}}'>
+       <view class="flex-sub line-blue solid{{size?'s':''}} padding-sm margin-xs radius">
+       	<input placeholder="车牌号" class="text-black" bindinput='numberInputData' value='{{busNumber}}' ></input>
+      </view>
+    </view>
+
+      <text class="text-blue text-bold" hidden='{{oneshow}}'> 手机号</text>
+    <view class="flex" hidden='{{oneshow}}'>
+       <view class="flex-sub line-blue solid{{size?'s':''}} padding-sm margin-xs radius">
+       	<input placeholder="输入11位手机号" class="text-black" bindinput='mobileInputData' value='{{mobile}}'></input>
+      </view>
+    </view>
+   
+   <text class="text-blue text-bold" hidden='{{oneshow}}'> 验证码</text>
+    <view class="flex  p-xs margin-bottom-sm mb-sm" hidden='{{oneshow}}'>
+      <view class="flex-twice line-blue solid{{size?'s':''}} padding-sm margin-xs radius">
+      <input placeholder="请输入验证码" class="text-black"  bindinput='codeInputData' value='{{code}}'></input></view>
+      <button class="cu-btn bg-cyan flex-sub padding-sm margin-xs radius" style="height:45px">获取验证码</button>
+    </view>
+
+  <view class="" hidden='{{oneshow}}'>
+   <button class="cu-btn bg-blue " style="height:45px;width:350px" bindtap="IsShow">下一步</button>
+   </view>
+
+   <!-- 第二步的展示页面 -->
+  <text class="text-blue text-bold" hidden='{{twoshow}}'> 家庭地址</text>
+  <view class="flex" hidden='{{twoshow}}'>
+       <view class="flex-sub line-blue solid{{size?'s':''}} padding-sm margin-xs radius">
+       	<input placeholder="家庭地址" class="text-black" bindtap='homeLocation' value='{{homeLocation}}'></input>
+      </view>
+   </view>
+<text class="text-blue text-bold" hidden='{{twoshow}}'>工作地址</text>
+  <view class="flex" hidden='{{twoshow}}'>
+       <view class="flex-sub line-blue solid{{size?'s':''}} padding-sm margin-xs radius">
+       	<input placeholder="工作地址" class="text-black" bindinput='workLocation' value='{{workLocation}}'></input>
+      </view>
+   </view>
+ <view class="action" hidden='{{twoshow}}'>
+    <switch class="sm" checked="{{isChecked}}" bindchange=""></switch>
+        <text class="text-df margin-right-sm">同家庭地址</text>
+  </view>
+  <view class="padding solid{{size?'s':''}}-top margin-top" hidden='{{twoshow}}'></view>
+
+  <text class="text-blue text-bold" hidden='{{twoshow}}'>平时上班出发时间</text>
+  <view class="flex" hidden='{{twoshow}}'>
+  <view class="flex-sub line-blue solid{{size?'s':''}} padding-sm margin-xs radius">
+   <picker mode="time" value="{{commontime}}" start="09:01" end="21:01" bindchange="CommonTimeChange">
+		<view class="cu-form-group">
+		<input placeholder="请选择时间" value="{{commontime}}" bindblur="CommonTimeChange"></input>
+		<text class="cuIcon-time text-grey"></text>
+	</view>
+		</picker>
+      </view>
+   </view>
+  <text class="text-blue text-bold" hidden='{{twoshow}}'>可接受最早出发时间</text>
+  <view class="flex" hidden='{{twoshow}}'>
+  <view class="flex-sub line-blue solid{{size?'s':''}} padding-sm margin-xs radius">
+   <picker mode="time" value="{{startime}}" start="09:01" end="21:01" bindchange="StarTimeChange">
+		<view class="cu-form-group">
+		<input placeholder="请选择时间" value="{{startime}}"></input>
+		<text class="cuIcon-time text-blue"></text>
+	</view>
+		</picker>
+      </view>
+   </view>
+   <text class="text-blue text-bold" hidden='{{twoshow}}'>可接受最晚出发时间</text>
+  <view class="flex" hidden='{{twoshow}}'>
+  <view class="flex-sub line-blue solid{{size?'s':''}} padding-sm margin-xs radius">
+   <picker mode="time" value="{{latestime}}" start="09:01" end="21:01" bindchange="LasTimeChange">
+		<view class="cu-form-group">
+		<input placeholder="请选择时间" value="{{latestime}}"></input>
+		<text class="cuIcon-time text-red"></text>
+	</view>
+		</picker>
+      </view>
+   </view>
+  <view class="padding solid{{size?'s':''}}-top margin-top" hidden='{{twoshow}}'></view>
+
+<view class="" hidden='{{twoshow}}'>
+   <button class="cu-btn bg-blue " style="height:45px;width:350px" bindtap="register">完成注册</button>
+   </view>
+
+</view>

@@ -1,0 +1,70 @@
+<cu-custom bgColor="bg-blue" isBack="{{true}}"><view slot="backText">返回</view><view slot="content">新建出行计划</view></cu-custom>
+
+<view class="weui-search-bar" bindtap='' hidden="{{show}}">
+  <view class="weui-search-bar__form">
+    <view class="weui-search-bar__box">
+		<view class="title cuIcon-locationfill text-red margin-right-lg">出发地</view>
+      <input type="text" class="weui-search-bar__input" value="{{nowlocation}}" placeholder="当前定位地点作为初始化地址" disabled="true" />
+    </view>
+     <view class="weui-search-bar__box">
+		<view class="title cuIcon-locationfill text-blue margin-right-lg">到达地</view>
+      <input type="text" class="weui-search-bar__input" placeholder="请输入到达地址" />
+    </view>
+  </view>
+</view>
+
+<view class="map_container">
+  <map class="map" id="map" longitude="{{longitude}}" latitude="{{latitude}}" scale="14" show-location="true" markers="{{markers}}" bindmarkertap="makertap">
+
+
+
+  <view class="padding text-left" style="margin-top:290px" hidden="{{show}}">
+   <button class="cu-btn bg-blue " style="height:45px;width:350px" bindtap="IsShow">选择出行方案</button>
+   </view>
+
+   <!-- 选择方案 -->
+   <!--导航部分轮播图-->
+<view class="padding text-left" style="margin-top:160px;margin-left:10px" hidden="{{ideaShow}}">
+  <!--水平滚动-->
+<scroll-view scroll-x="true" style=" white-space: nowrap; display: enable-flex" >
+<!--  display: inline-block-->
+  <view  style="background: white;width: 150px; height: 200px; display: inline-block;border: solid 1px; border-radius: 5px;{{oneChecked?'border-color: grey':'border-color: blue'}}" bindtap="changeClass1">
+    <view class="text-center padding text-lg">方案一</view>
+  <view class="text-center padding text-blue">出发时间：6.30</view>
+  <view class="text-center padding text-blue">行程时间：40分钟</view>
+  <view class="text-center padding">积分奖励：50</view>
+  </view>
+
+  <view style="background: white; width: 150px; height: 200px; display: inline-block;border: solid 1px; border-radius: 5px;{{twoChecked?'border-color: grey':'border-color: red'}}" bindtap="changeClass2">
+    <view class="cu-avatar  cu-tag badge" style="margin-right:140px;margin-top:10px">推荐</view>
+  <view class="text-center padding text-lg">方案二</view>
+  <view class="text-center padding text-blue">出发时间：7.00</view>
+  <view class="text-center padding text-blue">行程时间：45分钟</view>
+  <view class="text-center padding">积分奖励：40</view>
+  </view>
+  <view style="background: white; width: 150px; height: 200px; display: inline-block;border: solid 1px; border-radius: 5px;{{threeChecked?'border-color: grey':'border-color: blue'}}" bindtap="changeClass3">
+    <view class="text-center padding text-lg">方案三</view>
+  <view class="text-center padding text-blue">出发时间：7.30</view>
+  <view class="text-center padding text-blue">行程时间：40分钟</view>
+  <view class="text-center padding">积分奖励：20</view>
+  </view>
+<view style="background: white; line-blue width: 150px; height: 200px; display: inline-block;border: solid 1px; border-radius: 5px;{{fourChecked?'border-color: grey':'border-color: blue'}}" bindtap="changeClass4" >
+    <view class="text-center padding text-lg">方案四</view>
+  <view class="text-center padding text-blue">出发时间：6.30</view>
+  <view class="text-center padding text-blue">行程时间：40分钟</view>
+  <view class="text-center padding">积分奖励：10</view>
+  </view>
+  </scroll-view>
+
+</view>
+  <view class="padding text-left" style="margin-top:20px" hidden="{{ideaShow}}">
+   <button class="cu-btn bg-blue " style="height:45px;width:350px" bindtap="order">确定预约</button>
+   </view>
+
+
+   
+  </map>
+  
+
+
+</view>

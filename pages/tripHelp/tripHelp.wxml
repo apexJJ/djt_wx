@@ -1,0 +1,19 @@
+<!--pages/tripHelp/tripHelp.wxml-->
+<cu-custom bgColor="bg-blue" isBack="{{true}}"><view slot="backText">返回</view><view slot="content">出行帮助</view></cu-custom>
+
+<view class="map_container">
+  <map class="map" id="map" controls="{{controls}}" longitude="{{longitude}}" latitude="{{latitude}}" scale="14" show-location="true" markers="{{markers}}" bindmarkertap="makertap">
+   
+  
+  <view class="padding text-left" style="margin-top:290px" >
+    <button class="cu-btn block bg-blue margin-tb-sm lg">
+    <text class="cuIcon-loading2 iconfont-spin"></text> 启动导航</button>
+     <button class="cu-btn block bg-grey margin-tb-sm lg">
+    <text class=""></text> 打卡结束行程</button>
+   </view> 
+  
+
+  </map>
+  
+
+</view>

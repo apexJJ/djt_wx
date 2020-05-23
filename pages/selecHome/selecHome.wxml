@@ -1,0 +1,23 @@
+<cu-custom bgColor="bg-blue" isBack="{{true}}"><view slot="backText">返回</view><view slot="content">选择您的家庭地址</view></cu-custom>
+
+<view class="cu-bar bg-white search fixed" style="top:90px">
+  <view class="search-form round">
+    <text class="cuIcon-search"></text>
+    <input type="text" placeholder="当前定位作为您的家庭地址" value="{{nowlocation}}" confirm-type="search" bindinput="searchIcon"></input>
+  </view>
+</view>
+
+<view class="map_container">
+  <map class="map" id="map" longitude="{{longitude}}" latitude="{{latitude}}" scale="14" show-location="true" markers="{{markers}}" bindmarkertap="makertap">
+
+
+
+  <view class="padding text-left" style="margin-top:350px" >
+   <button class="cu-btn bg-blue " style="height:45px;width:350px" bindtap="backRegister">确定选择</button>
+   </view>
+  
+  </map>
+  
+
+
+</view>

@@ -1,0 +1,8 @@
+/* pages/userTrip/userTrip.wxss */
+
+.line{
+margin: 0 auto;
+/*width: 150rpx;
+height: 2rpx;*/
+background-color: #D8D8D8;
+}

@@ -1,0 +1,131 @@
+<cu-custom bgColor="bg-blue" isBack="{{true}}"><view slot="backText">返回</view><view slot="content">智行预约出行</view></cu-custom>
+
+  <view class="padding bg-white text-left  ">
+  <view class="cu-list menu-avatar">
+  <view class="cu-item ">
+      <view class="cu-avatar round lg" style="background-image:url(./lwj.jpg);"></view>
+      <view class="content">
+        <view class="text-pink">
+          <text class="text-cut">李文俊</text>
+        </view>
+        <view class="text-blue text-sm flex">
+          <text class="text-cut">积分：500</text>
+        </view>
+      </view>
+      <view class="action">
+        <view class="cu-tag round bg-red sm">10</view>
+        <text class="cuIcon-noticefill text-blue"></text>
+      </view>
+    </view>
+   </view>
+
+  
+    <view class="padding solid{{size?'s':''}}-top"></view>
+   <button class="cu-btn bg-blue " style="height:40px;width:350px" bindtap="goPage">新建出行计划</button>
+  <view class="flex-sub line-blue padding-sm margin-xs radius">
+   <text class="text-blue text-sub" >{{motto}}</text>
+   </view>
+
+ <view class="flex-sub line-blue solid{{size?'s':''}} padding-sm margin-xs radius">
+  <view class="cu-list menu">
+  <view class="cu-item">
+      <view class="content ">
+       <view class="text-blue">
+          <text class="text-cut">2019-12-05 08:00</text>
+        </view>
+        <view class="text-black">
+          <text class="text-cut">出发地：苏州科技中心</text>
+        </view>
+        <view class="text-black">
+          <text class="text-cut">目的地：苏州大学科技创业园</text>
+        </view>
+      </view>
+      <view class="action">
+        <view class="cu-tag round bg-red sm margin-bottom-xl">倒计时20小时30分钟</view>
+        <view class="text-blue text-lg ">
+          <text class="text-sl margin-left-xl">50</text>
+          <text class="text-black">积分</text>
+        </view>
+      </view>
+    </view>
+   </view>
+ </view>
+
+ <view class="flex-sub line-blue solid{{size?'s':''}} padding-sm margin-xs radius">
+  <view class="cu-list menu">
+  <view class="cu-item">
+      <view class="content ">
+       <view class="text-blue">
+          <text class="text-cut">2019-12-05 08:00</text>
+        </view>
+        <view class="text-black">
+          <text class="text-cut">出发地：苏州科技中心</text>
+        </view>
+        <view class="text-black">
+          <text class="text-cut">目的地：高铁北站</text>
+        </view>
+      </view>
+      <view class="action">
+        <view class="cu-tag round bg-red sm margin-bottom-xl">倒计时31小时30分钟</view>
+        <view class="text-blue text-lg ">
+          <text class="text-sl margin-left-xl">50</text>
+          <text class="text-black">积分</text>
+        </view>
+      </view>
+    </view>
+   </view>
+ </view>
+
+  <view class="flex-sub line-blue padding-sm margin-xs radius">
+   <text class="text-gray text-sub" >{{history}}</text>
+   </view>
+
+ <view class="flex-sub line-gray solid{{size?'s':''}} padding-sm margin-xs radius">
+  <view class="cu-list menu">
+  <view class="cu-item">
+      <view class="content ">
+       <view class="text-gray">
+          <text class="text-cut">2019-12-05 08:00</text>
+        </view>
+        <view class="text-gray">
+          <text class="text-cut">出发地：苏州科技中心</text>
+        </view>
+        <view class="text-gray">
+          <text class="text-cut">目的地：苏州大学科技创业园</text>
+        </view>
+      </view>
+      <view class="action">
+        <view class="cu-tag round bg-gray sm margin-bottom-xl">倒计时20小时30分钟</view>
+        <view class="text-gray text-lg ">
+          <text class="text-sl margin-left-xl">50</text>
+          <text>积分</text>
+        </view>
+      </view>
+    </view>
+   </view>
+ </view>
+
+ <view class="flex-sub line-gray solid{{size?'s':''}} padding-sm margin-xs radius">
+  <view class="cu-list menu">
+  <view class="cu-item">
+      <view class="content ">
+       <view class="text-gray">
+          <text class="text-cut">2019-12-05 08:00</text>
+        </view>
+        <view class="text-gray">
+          <text class="text-cut">出发地：苏州科技中心</text>
+        </view>
+        <view class="text-gray">
+          <text class="text-cut">目的地：高铁北站</text>
+        </view>
+      </view>
+      <view class="action">
+        <view class="text-gray text-lg   margin-left-xl ">
+          <text class="text-xl ">未完成</text>
+        </view>
+      </view>
+    </view>
+   </view>
+ </view>
+
+</view>

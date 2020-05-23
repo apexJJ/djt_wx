@@ -1,0 +1,228 @@
+/* pages/newMap/newMap.wxss */
+
+.map_container{
+  height: 600px;
+  width: 100%;
+}
+
+.map {
+  height: 100%;
+  width: 100%;
+}
+
+.rgc_info {
+  padding: 5px 5px;
+}
+
+.rgc_info text{
+  display: block;
+}
+.weui-search-bar {
+  position: relative;
+  padding: 8px 10px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  box-sizing: border-box;
+  background-color: #efeff4;
+  border-top: 1rpx solid #d7d6dc;
+  border-bottom: 1rpx solid #d7d6dc;
+}
+
+.weui-icon-search {
+  margin-right: 8px;
+  font-size: inherit;
+}
+
+.weui-icon-search_in-box {
+  position: absolute;
+  left: 10px;
+  top: 7px;
+}
+
+.weui-search-bar__form {
+  position: relative;
+  -webkit-box-flex: 1;
+  -webkit-flex: auto;
+  flex: auto;
+  border-radius: 5px;
+  background: #fff;
+  border: 1rpx solid #e6e6ea;
+}
+
+.weui-search-bar__box {
+  position: relative;
+  padding-left: 30px;
+  padding-right: 30px;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 1;
+}
+
+.weui-search-bar__input {
+  height: 28px;
+  line-height: 28px;
+  font-size: 14px;
+}
+
+/*底部弹窗开始 -使屏幕变暗  */
+
+.commodity_screen {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #000;
+  opacity: 0.2;
+  overflow: hidden;
+  z-index: 1000;
+  color: #fff;
+}
+
+/*对话框 */
+
+.commodity_attr_box {
+  height: 280rpx;
+  width: 100%;
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 2000;
+  background: #fff;
+  padding-top: 0rpx;
+}
+
+.placeBox {
+  width: 100%;
+  height: 150rpx;
+}
+
+.placeViewLt {
+  display: inline-block;
+  /* width: 620rpx; */
+  height: 140rpx;
+  vertical-align: middle;
+}
+
+.viewTitle {
+  display: block;
+  font-size: 38rpx;
+  color: #3f51b5;
+  margin: 0 20rpx 20rpx 20rpx;
+  padding-top: 34rpx;
+}
+
+.viewDis {
+  display: inline-block;
+  font-size: 26rpx;
+  color: gray;
+  margin-left: 20rpx;
+  margin-right:20rpx;
+}
+
+.viewAddr {
+  display: inline-block;
+  font-size: 28rpx;
+  color: gray;
+  margin: 0 20rpx;
+}
+
+.placeViewRt {
+  display: inline-block;
+  width: 120rpx;
+  height: 120rpx;
+  padding-top: 6rpx;
+  vertical-align: middle;
+}
+
+.viewIcon {
+  display: block;
+  height: 100rpx;
+  width: 100%;
+  border-top: 1px solid #ebebeb;
+  padding-top: 40rpx;
+}
+
+.indexIcon {
+  display: inline-block;
+  width: 50rpx;
+  height: 50rpx;
+  margin-left: 30rpx;
+  vertical-align: middle;
+}
+
+.timeText {
+  display: inline-block;
+  line-height: 45rpx;
+  margin-left: 12rpx;
+  text-align: center;
+  width: 200rpx;
+  height: 45rpx;
+  background-color: rgb(230, 234, 255);
+  border-radius: 10px;
+  color: #3f51b5;
+  font-size: 24rpx;
+  vertical-align:middle;
+}
+
+.indexIcon1 {
+  display: inline-block;
+  width: 50rpx;
+  height: 50rpx;
+  margin-left: 110rpx;
+  vertical-align: middle;
+}
+
+.indexIcon2 {
+  display: inline-block;
+  width: 50rpx;
+  height: 50rpx;
+  margin-left: 20rpx;
+  vertical-align: middle;
+}
+
+.timeText1 {
+  display: inline-block;
+  line-height: 45rpx;
+  margin-left: 12rpx;
+  height: 45rpx;
+  color: #3f51b5;
+  font-size: 24rpx;
+  vertical-align:middle;
+}
+
+.timeText2 {
+  display: inline-block;
+  line-height: 45rpx;
+  margin-left: 12rpx;
+  width: 200rpx;
+  height: 45rpx;
+  color: #3f51b5;
+  font-size: 24rpx;
+  vertical-align:middle;
+}
+
+.btn-area {
+  width: 100%;
+}
+
+.btn_no {
+  float: left;
+  width: 40%;
+  margin-left: 5%;
+  border: 0px;
+}
+
+.btn_ok {
+  float: left;
+  width: 40%;
+  margin-left: 10%;
+  margin-right: 5%;
+  border: 0px;
+}
+.park-type{
+  width: 50px;
+  height: 50px;
+}
